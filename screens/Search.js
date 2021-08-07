@@ -7,7 +7,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import { colors } from '../utils';
-import { MaterialCommunityIcons, FontAwesome5 } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function Search() {
   return (
