@@ -7,11 +7,9 @@ import UnitsPicker from '../components/UnitsPicker';
 import ReloadIcon from '../components/ReloadIcon';
 import WeatherDetails from '../components/WeatherDetails';
 import { colors } from '../utils';
-import { WEATHER_API_KEY } from '@env';
+import { WEATHER_API_KEY, BASE_WEATHER_URL } from '@env';
 
-const BASE_WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather?';
-
-export default function Home() {
+export default function Home({ navigation }) {
   const [errorMessage, setErrorMessage] = useState(null);
   const [currentWeather, setCurrentWeather] = useState(null);
   const [unitsSystem, setUnitsSystem] = useState('metric');
